@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/macmini06/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -88,6 +88,9 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# General commands exports
+export GREP_OPTIONS='—color=auto'
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -99,7 +102,6 @@ source $ZSH/oh-my-zsh.sh
 
 # zplug "dracula/zsh", as:theme
 
-alias estudos="$HOME/Documents/estudos"
 alias getbranch="git branch | grep \* | cut -d ' ' -f2 | pbcopy . | xargs" 
 alias getdir="pwd | pbcopy | xargs"
 alias p="pod"
